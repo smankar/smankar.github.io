@@ -4,13 +4,21 @@
  <title>Sandeep Mankar's Blog</title>
  <link href="http://smankar.github.io/" rel="self"/>
  <link href="http://smankar.github.io"/>
- <updated>2014-04-23T11:05:09+05:30</updated>
+ <updated>2014-11-26T11:49:24+05:30</updated>
  <id>http://smankar.github.io</id>
  <author>
    <name>Sandeep Mankar</name>
    <email>sandeep2311982@yahoo.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Good Morning</title>
+   <link href="http://smankar.github.io/2014/11/01/my-first-post"/>
+   <updated>2014-11-01T00:00:00+05:30</updated>
+   <id>http://smankar.github.io/2014/11/01/my-first-post</id>
+   <content type="html"></content>
+ </entry>
  
  <entry>
    <title>Jekyll Introduction</title>

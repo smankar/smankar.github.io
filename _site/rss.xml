@@ -5,10 +5,18 @@
         <description>Sandeep Mankar's Blog - Sandeep Mankar</description>
         <link>http://smankar.github.io</link>
         <link>http://smankar.github.io</link>
-        <lastBuildDate>2014-04-23T11:05:09+05:30</lastBuildDate>
-        <pubDate>2014-04-23T11:05:09+05:30</pubDate>
+        <lastBuildDate>2014-11-26T11:49:24+05:30</lastBuildDate>
+        <pubDate>2014-11-26T11:49:24+05:30</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Good Morning</title>
+                <description></description>
+                <link>http://smankar.github.io/2014/11/01/my-first-post</link>
+                <guid>http://smankar.github.io/2014/11/01/my-first-post</guid>
+                <pubDate>2014-11-01T00:00:00+05:30</pubDate>
+        </item>
 
         <item>
                 <title>Jekyll Introduction</title>
