@@ -10,5 +10,5 @@ http://smankar.github.io/rss.xml
 http://smankar.github.io/sitemap.txt
 http://smankar.github.io/tags.html
 
+http://smankar.github.io/2014/11/27/whose-performance-is-it-anyway
 http://smankar.github.io/2014/11/01/my-first-post
-http://smankar.github.io/lessons/2011/12/29/jekyll-introduction
