@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Whose Performance is it anyway?</title>
+    <meta name="description" content="">
+    <meta name="author" content="Sandeep Mankar">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Sandeep Mankar's Blog</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Whose Performance is it anyway? <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row">
+  <div class="span10">
+    <p>Last month we finished an awesome <a href="http://www.thoughtworks.com/insights/blog/vodqa-shots-pune-roundup">vodQA event</a> at our Thoughtworks Pune office. During the event it was encouraging to see a lot of interest in Performance Testing. But I was also a bit disappointed to see all of the performance testing discussions limited to “Load Testing”.</p>
+
+<p>For a web application, “Load Testing” typically gives us an insight into the server-side performance. But three is a lot more to performance testing than just measuring server-side performance. Back in 2010 Steve Souders wrote about <a href="http://www.stevesouders.com/blog/2010/06/01/frontend-spof/">frontend SPOF</a>. He makes an important observation:</p>
+
+<blockquote>
+<p>”.. we’ve learned that 80% of the time users wait for a web page to load is the responsibility of the frontend.”</p>
+</blockquote>
+
+<p>Back to 2014 and the world has been moving towards even more distributed applications. Networks are being re-written and there is already a huge momentum behind Internet of Things (IOT). Your Application’s performance matters and it will do more so in the coming years. But If “Load Tests” are the only performance tests for your application, then you have a slim chance of identifying performance issues upfront. Well, server-side performance is important but equally so is the performance of your client-side code, network, infrastructure and even the 3rd party libraries that you use. Let us start with a very basic question.</p>
+
+<h3 id="1_what_really_is_well_performing_code">1. What really is well performing code?</h3>
+
+<p>To answer this question, we need to look at the basics of computer science and I found a really good explanation <a href="http://introcs.cs.princeton.edu/java/41analysis/">here</a>. If I try to summarize it in a simplistic context, I would say that code performance will be influenced by two primary factors:</p>
+
+<ol>
+<li>Execution time for a piece of code - This will be dependent on the underlying system</li>
+
+<li>Number of times a piece of code is executed - This will be dependent on the efficiency of the algorithm</li>
+</ol>
+
+<p>Hence, Application Performance cannot be independent of the underlying system. The important thing to realize here is that today the underlying system not just a single computer. It is in fact a complex mix of multi-layered software code sitting on top of a variety of hardware systems which are interconnected via different network mediums. And that leads me to the question that has been bugging me for a while..</p>
+
+<h3 id="2_whose_performance_are_we_are_trying_to_test">2. Whose performance are we are trying to test?</h3>
+
+<p>I feel this is an important question to ponder before we begin with any performance testing exercise. With the complex and multi-layered systems that we work with today, there are different things that could hurt an applications performance. Here are some of the questions I like to being with before really try:</p>
+
+<ol>
+<li>Are we trying to test the performance of the piece of code that we just wrote?</li>
+
+<li>Do we want to test the code performance when it is deployed in an application / web server?</li>
+
+<li>Are we interested in monitoring the change in overall application performance for each code change?</li>
+
+<li>Are we trying to tweak our web / application server settings for faster response times?</li>
+
+<li>Trying to get some performance figures for Capacity planning?</li>
+
+<li>How much peak load would our application handle? How does it scale?</li>
+
+<li>Are we trying to monitor the performance of our live application?</li>
+
+<li>Are we checking for bottlenecks in your Application Infrastructure</li>
+
+<li>Do we want to check for performance problems from an End User Perspective?
+<ul>
+<li>Validate that our applications response times are within the required threshold</li>
+
+<li>Validate that our applications response times are similar across your target locations</li>
+
+<li>Validate that our applications response times are similar when accessed from different networks</li>
+</ul>
+</li>
+</ol>
+
+<p>These are all important questions that try to address different aspects of application performance. I would ideally classify these into 3 different categories:</p>
+
+<ul>
+<li>Lower Level tests closer to code (1-3)</li>
+
+<li>Higher Level tests which are more from the system perspective (4-6)</li>
+
+<li>Real User Measurements (7-9)</li>
+</ul>
+
+<p>With this categorization in place, I feel well-equipped to start designing testing experiments for uncovering performance problems in each area. I feel that the next step will be to come up with an effective performance test strategy. But thats for another post.</p>
+
+<p>Since this is my first post, I would really like to hear your thoughts and suggestions. Please do leave your comments</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/2014/11/01/my-first-post" title="My first post">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next disabled"><a>Next &rarr;</a>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'smankar'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>10 December 2014</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#Performance Testing-ref">Performance Testing <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Sandeep Mankar 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

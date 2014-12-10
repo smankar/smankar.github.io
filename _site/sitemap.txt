@@ -3,12 +3,11 @@ http://smankar.github.io/about.html
 http://smankar.github.io/archive.html
 http://smankar.github.io/atom.xml
 http://smankar.github.io/categories.html
-http://smankar.github.io/index.html
 http://smankar.github.io/pages/about/index.html
 http://smankar.github.io/pages.html
 http://smankar.github.io/rss.xml
 http://smankar.github.io/sitemap.txt
 http://smankar.github.io/tags.html
 
-http://smankar.github.io/2014/11/27/whose-performance-is-it-anyway
+http://smankar.github.io/2014/12/10/whose-performance-is-it-anyway
 http://smankar.github.io/2014/11/01/my-first-post
