@@ -29,8 +29,8 @@ So, how do we quantify code performance? Well, the easiest measure for the perfo
 
 > The total running time is determined by two primary factors:
 >
->    1. The cost of executing each statement. (property of the system)
->    2. The frequency of execution of each statement. (property of the algorithm)
+>    1. The cost of executing each statement. (A property of the system)
+>    2. The frequency of execution of each statement. (A property of the algorithm)
 
 This means that the performance of code depends as much on the underlying system as its algorithmic efficiency.
 And really, the underlying system is not mere a single computer. These days, it is made up of complex mix of multi-layered software code sitting on top of a variety of hardware systems which are interconnected via different network mediums.
@@ -57,9 +57,10 @@ It is really important that we look at all aspects of application performance be
 These are all important questions that try to address different aspects of application performance.
 They should help us design specific testing experiments and in-turn help uncovering performance problems.
 Essentially, I would classify these into 3 different categories:
-  - Lower Level tests closer to code (1-3)
-  - Higher Level tests which are more from the system perspective (4-6)
-  - Real User Measurements (7-9)
+
+  - Lower Level tests that are closer to code (Questions 1-3)
+  - Higher Level tests that are more from the system perspective (Questions 4-6)
+  - Real User Measurements (Questions 7-9)
 
 The next step here is to come up with an effective performance test strategy based on these categories. I plan to write about it in my next blog post.
 But, if you've got this far I would love to hear from you. Did I miss anything? Do you have better suggestions?

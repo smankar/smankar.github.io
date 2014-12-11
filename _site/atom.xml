@@ -4,7 +4,7 @@
  <title>Sandeep Mankar's Blog</title>
  <link href="http://smankar.github.io/" rel="self"/>
  <link href="http://smankar.github.io"/>
- <updated>2014-12-11T21:35:19+05:30</updated>
+ <updated>2014-12-11T21:44:24+05:30</updated>
  <id>http://smankar.github.io</id>
  <author>
    <name>Sandeep Mankar</name>
@@ -35,9 +35,9 @@
 &lt;p&gt;The total running time is determined by two primary factors:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;The cost of executing each statement. (property of the system)&lt;/li&gt;
+&lt;li&gt;The cost of executing each statement. (A property of the system)&lt;/li&gt;
 
-&lt;li&gt;The frequency of execution of each statement. (property of the algorithm)&lt;/li&gt;
+&lt;li&gt;The frequency of execution of each statement. (A property of the algorithm)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
 
@@ -78,11 +78,11 @@
 &lt;p&gt;These are all important questions that try to address different aspects of application performance. They should help us design specific testing experiments and in-turn help uncovering performance problems. Essentially, I would classify these into 3 different categories:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Lower Level tests closer to code (1-3)&lt;/li&gt;
+&lt;li&gt;Lower Level tests that are closer to code (Questions 1-3)&lt;/li&gt;
 
-&lt;li&gt;Higher Level tests which are more from the system perspective (4-6)&lt;/li&gt;
+&lt;li&gt;Higher Level tests that are more from the system perspective (Questions 4-6)&lt;/li&gt;
 
-&lt;li&gt;Real User Measurements (7-9)&lt;/li&gt;
+&lt;li&gt;Real User Measurements (Questions 7-9)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;The next step here is to come up with an effective performance test strategy based on these categories. I plan to write about it in my next blog post. But, if you’ve got this far I would love to hear from you. Did I miss anything? Do you have better suggestions? Please do leave your comments…..&lt;/p&gt;</content>
