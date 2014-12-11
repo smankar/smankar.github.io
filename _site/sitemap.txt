@@ -3,6 +3,7 @@ http://smankar.github.io/about.html
 http://smankar.github.io/archive.html
 http://smankar.github.io/atom.xml
 http://smankar.github.io/categories.html
+http://smankar.github.io/
 http://smankar.github.io/pages/about/index.html
 http://smankar.github.io/pages.html
 http://smankar.github.io/rss.xml
