@@ -25,7 +25,7 @@ On this journey to understand application performance, I would like to start wit
 
 ### 1. What really is well performing code?
 The answer to this question lead me to the basics of computer science. And I came across some excellent examples in Princeton University's [Analysis of Algorithms](http://introcs.cs.princeton.edu/java/41analysis/).
-So, how do we quantify code performance? Well, the easiest measure for the performance of a program is its running time. And let me quote once again:
+How do we quantify code performance? well, the easiest measure for the performance of a program is its running time. And let me quote once again:
 
 > The total running time is determined by two primary factors:
 >

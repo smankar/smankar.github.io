@@ -4,7 +4,7 @@
  <title>Sandeep Mankar's Blog</title>
  <link href="http://smankar.github.io/" rel="self"/>
  <link href="http://smankar.github.io"/>
- <updated>2014-12-11T21:44:24+05:30</updated>
+ <updated>2014-12-11T21:53:46+05:30</updated>
  <id>http://smankar.github.io</id>
  <author>
    <name>Sandeep Mankar</name>
@@ -29,7 +29,7 @@
 
 &lt;h3 id=&quot;1_what_really_is_well_performing_code&quot;&gt;1. What really is well performing code?&lt;/h3&gt;
 
-&lt;p&gt;The answer to this question lead me to the basics of computer science. And I came across some excellent examples in Princeton University’s &lt;a href=&quot;http://introcs.cs.princeton.edu/java/41analysis/&quot;&gt;Analysis of Algorithms&lt;/a&gt;. So, how do we quantify code performance? Well, the easiest measure for the performance of a program is its running time. And let me quote once again:&lt;/p&gt;
+&lt;p&gt;The answer to this question lead me to the basics of computer science. And I came across some excellent examples in Princeton University’s &lt;a href=&quot;http://introcs.cs.princeton.edu/java/41analysis/&quot;&gt;Analysis of Algorithms&lt;/a&gt;. How do we quantify code performance? well, the easiest measure for the performance of a program is its running time. And let me quote once again:&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;The total running time is determined by two primary factors:&lt;/p&gt;
