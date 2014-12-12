@@ -118,7 +118,7 @@
 <p>”.. we’ve learned that 80% of the time users wait for a web page to load is the responsibility of the frontend.”</p>
 </blockquote>
 
-<p>Fast Forward to 2014 and the world has been moving towards even more distributed applications. Networks are being re-written and there is already a huge momentum behind Internet of Things (IOT). Your Application’s performance matters and it will do more so in the coming years. But If “Load Tests” are the only performance tests for your application, then you have a slim chance of identifying performance issues upfront. Server-side performance is important but equally so is the performance of your client-side code, network, infrastructure and even the 3rd party libraries that you use. On this journey to understand application performance, I would like to start with some very basic questions:</p>
+<p>Fast Forward to 2014 and the world has been moving towards even more distributed applications. Networks are being re-written and there is already a huge momentum behind Internet of Things (IOT). Our Application’s performance matters and it will do more so in the coming years. But If “Load Tests” are the only performance tests for our application, then you have a slim chance of identifying performance issues upfront. Server-side performance is important but equally so is the performance of our client-side code, network, infrastructure and even the 3rd party libraries that you use. On this journey to understand application performance, I would like to start with some very basic questions:</p>
 
 <h3 id="1_what_really_is_well_performing_code">1. What really is well performing code?</h3>
 
@@ -146,19 +146,19 @@
 
 <ol>
 <li>
-<p>Server-side code is sub-optimal but working fine.<br /> Going by the above picture, your server-side code has a lot of computing power at its disposal. And hence it should not have survival issues. Typically, a good load testing exercise should point this out. But unless there are major defects, you might just live on with additional computing power.</p>
+<p>Server-side code is sub-optimal but working fine.<br /> Going by the above picture, our server-side code has a lot of computing power at its disposal. And hence it should not have survival issues. Typically, a good load testing exercise should point this out. But unless there are major defects, we might just decide to live on with some additional computing power.</p>
 </li>
 
 <li>
-<p>Server-side code is super awesome but client-side code sucks.<br /> This is where you should be be shifting the focus of your performance tests. Tools like <a href="http://yslow.org/">YSlow</a> and <a href="https://developers.google.com/speed/pagespeed/">PageSpeed</a> should be able to get you kick-started.</p>
+<p>Server-side code is super awesome but client-side code sucks.<br /> This is where we should be be shifting the focus of our performance tests. Tools like <a href="http://yslow.org/">YSlow</a> and <a href="https://developers.google.com/speed/pagespeed/">PageSpeed</a> should be able to get us started.</p>
 </li>
 
 <li>
-<p>All of your code is super awesome. But your servers are in a different country than your target audience.<br /> How early can can you detect such issues? A simple <a href="http://www.webpagetest.org/">web page test</a> should point this out. But ideally you would create continuous probes from across the target locations to keep your web-application well performing.</p>
+<p>All our code is super awesome. But our servers are in a different country than our target audience.<br /> I feel the real question here is: How early can can we detect such issues? A simple <a href="http://www.webpagetest.org/">web page test</a> should point this out. But ideally we should create continuous probes from across the target locations to keep our web-application well performing.</p>
 </li>
 
 <li>
-<p>All of your code is super awesome. But your audience only uses wireless networks to access your web-application.<br /> Is your website optimised for wireless access? With the mobile revolution around us, this is is another important aspect of your web-application performance. Tools like <a href="http://mobitest.akamai.com/m/index.cgi">Mobitest</a> are relatively new on the block. But surely worth a try.</p>
+<p>Again, all our code is super awesome. But our audience only uses wireless networks to access the web-application.<br /> Is my website optimised for wireless access? With the mobile revolution around us, this is is another important aspect of our web-application performance. Tools like <a href="http://mobitest.akamai.com/m/index.cgi">Mobitest</a> are relatively new on the block. But surely worth a try.</p>
 </li>
 </ol>
 
@@ -175,19 +175,19 @@
 
 <li>Do we want to come up with some performance figures for Capacity planning?</li>
 
-<li>How much peak load would our application handle? How does it scale?</li>
+<li>How much peak load would the application handle? How does it scale?</li>
 
 <li>Are we trying to monitor the performance of our live application?</li>
 
-<li>Are we checking for bottlenecks in your Application Infrastructure?</li>
+<li>Are we checking for bottlenecks in the Application Infrastructure?</li>
 
 <li>Do we want to check for performance problems from an End User Perspective?
 <ul>
-<li>Validate that our application’s response times are within the required threshold</li>
+<li>Validate that the application’s response times are within the required threshold</li>
 
-<li>Validate that our application’s response times are similar across our target locations</li>
+<li>Validate that the application’s response times are similar across our target (audience) locations</li>
 
-<li>Validate that our application’s response times are similar when accessed from different network types</li>
+<li>Validate that the application’s response times are similar when accessed from different network types</li>
 </ul>
 </li>
 </ol>

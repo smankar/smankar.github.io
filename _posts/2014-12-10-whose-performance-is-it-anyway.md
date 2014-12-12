@@ -18,8 +18,8 @@ Back in 2010 Steve Souders wrote about [frontend SPOF](http://www.stevesouders.c
 > ".. we've learned that 80% of the time users wait for a web page to load is the responsibility of the frontend."
 
 Fast Forward to 2014 and the world has been moving towards even more distributed applications. Networks are being re-written and there is already a huge momentum behind Internet of Things (IOT).
-Your Application's performance matters and it will do more so in the coming years. But If "Load Tests" are the only performance tests for your application, then you have a slim chance of identifying performance issues upfront.
-Server-side performance is important but equally so is the performance of your client-side code, network, infrastructure and even the 3rd party libraries that you use.
+Our Application's performance matters and it will do more so in the coming years. But If "Load Tests" are the only performance tests for our application, then you have a slim chance of identifying performance issues upfront.
+Server-side performance is important but equally so is the performance of our client-side code, network, infrastructure and even the 3rd party libraries that you use.
 On this journey to understand application performance, I would like to start with some very basic questions:
 
 ### 1. What really is well performing code?
@@ -45,18 +45,18 @@ Have a look at a sample web application architecture pictured below. And then it
 
 #### Examples:
 1. Server-side code is sub-optimal but working fine.<br>
-Going by the above picture, your server-side code has a lot of computing power at its disposal. And hence it should not have survival issues.
-Typically, a good load testing exercise should point this out. But unless there are major defects, you might just live on with additional computing power.
+Going by the above picture, our server-side code has a lot of computing power at its disposal. And hence it should not have survival issues.
+Typically, a good load testing exercise should point this out. But unless there are major defects, we might just decide to live on with some additional computing power.
 
 2. Server-side code is super awesome but client-side code sucks.<br>
-This is where you should be be shifting the focus of your performance tests. Tools like [YSlow](http://yslow.org/) and [PageSpeed](https://developers.google.com/speed/pagespeed/) should be able to get you kick-started.
+This is where we should be be shifting the focus of our performance tests. Tools like [YSlow](http://yslow.org/) and [PageSpeed](https://developers.google.com/speed/pagespeed/) should be able to get us started.
 
-3. All of your code is super awesome. But your servers are in a different country than your target audience.<br>
-How early can can you detect such issues? A simple [web page test](http://www.webpagetest.org/) should point this out.
-But ideally you would create continuous probes from across the target locations to keep your web-application well performing.
+3. All our code is super awesome. But our servers are in a different country than our target audience.<br>
+I feel the real question here is: How early can can we detect such issues? A simple [web page test](http://www.webpagetest.org/) should point this out.
+But ideally we should create continuous probes from across the target locations to keep our web-application well performing.
 
-4. All of your code is super awesome. But your audience only uses wireless networks to access your web-application.<br>
-Is your website optimised for wireless access? With the mobile revolution around us, this is is another important aspect of your web-application performance.
+4. Again, all our code is super awesome. But our audience only uses wireless networks to access the web-application.<br>
+Is my website optimised for wireless access? With the mobile revolution around us, this is is another important aspect of our web-application performance.
 Tools like [Mobitest](http://mobitest.akamai.com/m/index.cgi) are relatively new on the block. But surely worth a try.
 
 To Summarize: it is really important that we look at all aspects of application performance before we try to measure it. And again a good way to get started is to ask some simple questions:
@@ -66,13 +66,13 @@ To Summarize: it is really important that we look at all aspects of application 
 3. How do I get alerted when there is change in overall application performance due to the small code change that I made?
 4. Are we trying to tweak our web or application server settings for faster response times?
 5. Do we want to come up with some performance figures for Capacity planning?
-6. How much peak load would our application handle? How does it scale?
+6. How much peak load would the application handle? How does it scale?
 7. Are we trying to monitor the performance of our live application?
-8. Are we checking for bottlenecks in your Application Infrastructure?
+8. Are we checking for bottlenecks in the Application Infrastructure?
 9. Do we want to check for performance problems from an End User Perspective?
-    - Validate that our application's response times are within the required threshold
-    - Validate that our application's response times are similar across our target locations
-    - Validate that our application's response times are similar when accessed from different network types
+    - Validate that the application's response times are within the required threshold
+    - Validate that the application's response times are similar across our target (audience) locations
+    - Validate that the application's response times are similar when accessed from different network types
 
 These are all important questions that try to address different aspects of application performance.
 They should help us design specific testing experiments and in-turn help uncovering performance problems.

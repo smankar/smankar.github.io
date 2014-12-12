@@ -5,8 +5,8 @@
         <description>Sandeep Mankar's Blog - Sandeep Mankar</description>
         <link>http://smankar.github.io</link>
         <link>http://smankar.github.io</link>
-        <lastBuildDate>2014-12-12T18:09:39+05:30</lastBuildDate>
-        <pubDate>2014-12-12T18:09:39+05:30</pubDate>
+        <lastBuildDate>2014-12-12T18:17:38+05:30</lastBuildDate>
+        <pubDate>2014-12-12T18:17:38+05:30</pubDate>
         <ttl>1800</ttl>
 
 
@@ -20,7 +20,7 @@
 &lt;p&gt;”.. we’ve learned that 80% of the time users wait for a web page to load is the responsibility of the frontend.”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Fast Forward to 2014 and the world has been moving towards even more distributed applications. Networks are being re-written and there is already a huge momentum behind Internet of Things (IOT). Your Application’s performance matters and it will do more so in the coming years. But If “Load Tests” are the only performance tests for your application, then you have a slim chance of identifying performance issues upfront. Server-side performance is important but equally so is the performance of your client-side code, network, infrastructure and even the 3rd party libraries that you use. On this journey to understand application performance, I would like to start with some very basic questions:&lt;/p&gt;
+&lt;p&gt;Fast Forward to 2014 and the world has been moving towards even more distributed applications. Networks are being re-written and there is already a huge momentum behind Internet of Things (IOT). Our Application’s performance matters and it will do more so in the coming years. But If “Load Tests” are the only performance tests for our application, then you have a slim chance of identifying performance issues upfront. Server-side performance is important but equally so is the performance of our client-side code, network, infrastructure and even the 3rd party libraries that you use. On this journey to understand application performance, I would like to start with some very basic questions:&lt;/p&gt;
 
 &lt;h3 id=&quot;1_what_really_is_well_performing_code&quot;&gt;1. What really is well performing code?&lt;/h3&gt;
 
@@ -48,19 +48,19 @@
 
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Server-side code is sub-optimal but working fine.&lt;br /&gt; Going by the above picture, your server-side code has a lot of computing power at its disposal. And hence it should not have survival issues. Typically, a good load testing exercise should point this out. But unless there are major defects, you might just live on with additional computing power.&lt;/p&gt;
+&lt;p&gt;Server-side code is sub-optimal but working fine.&lt;br /&gt; Going by the above picture, our server-side code has a lot of computing power at its disposal. And hence it should not have survival issues. Typically, a good load testing exercise should point this out. But unless there are major defects, we might just decide to live on with some additional computing power.&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;li&gt;
-&lt;p&gt;Server-side code is super awesome but client-side code sucks.&lt;br /&gt; This is where you should be be shifting the focus of your performance tests. Tools like &lt;a href=&quot;http://yslow.org/&quot;&gt;YSlow&lt;/a&gt; and &lt;a href=&quot;https://developers.google.com/speed/pagespeed/&quot;&gt;PageSpeed&lt;/a&gt; should be able to get you kick-started.&lt;/p&gt;
+&lt;p&gt;Server-side code is super awesome but client-side code sucks.&lt;br /&gt; This is where we should be be shifting the focus of our performance tests. Tools like &lt;a href=&quot;http://yslow.org/&quot;&gt;YSlow&lt;/a&gt; and &lt;a href=&quot;https://developers.google.com/speed/pagespeed/&quot;&gt;PageSpeed&lt;/a&gt; should be able to get us started.&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;li&gt;
-&lt;p&gt;All of your code is super awesome. But your servers are in a different country than your target audience.&lt;br /&gt; How early can can you detect such issues? A simple &lt;a href=&quot;http://www.webpagetest.org/&quot;&gt;web page test&lt;/a&gt; should point this out. But ideally you would create continuous probes from across the target locations to keep your web-application well performing.&lt;/p&gt;
+&lt;p&gt;All our code is super awesome. But our servers are in a different country than our target audience.&lt;br /&gt; I feel the real question here is: How early can can we detect such issues? A simple &lt;a href=&quot;http://www.webpagetest.org/&quot;&gt;web page test&lt;/a&gt; should point this out. But ideally we should create continuous probes from across the target locations to keep our web-application well performing.&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;li&gt;
-&lt;p&gt;All of your code is super awesome. But your audience only uses wireless networks to access your web-application.&lt;br /&gt; Is your website optimised for wireless access? With the mobile revolution around us, this is is another important aspect of your web-application performance. Tools like &lt;a href=&quot;http://mobitest.akamai.com/m/index.cgi&quot;&gt;Mobitest&lt;/a&gt; are relatively new on the block. But surely worth a try.&lt;/p&gt;
+&lt;p&gt;Again, all our code is super awesome. But our audience only uses wireless networks to access the web-application.&lt;br /&gt; Is my website optimised for wireless access? With the mobile revolution around us, this is is another important aspect of our web-application performance. Tools like &lt;a href=&quot;http://mobitest.akamai.com/m/index.cgi&quot;&gt;Mobitest&lt;/a&gt; are relatively new on the block. But surely worth a try.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -77,19 +77,19 @@
 
 &lt;li&gt;Do we want to come up with some performance figures for Capacity planning?&lt;/li&gt;
 
-&lt;li&gt;How much peak load would our application handle? How does it scale?&lt;/li&gt;
+&lt;li&gt;How much peak load would the application handle? How does it scale?&lt;/li&gt;
 
 &lt;li&gt;Are we trying to monitor the performance of our live application?&lt;/li&gt;
 
-&lt;li&gt;Are we checking for bottlenecks in your Application Infrastructure?&lt;/li&gt;
+&lt;li&gt;Are we checking for bottlenecks in the Application Infrastructure?&lt;/li&gt;
 
 &lt;li&gt;Do we want to check for performance problems from an End User Perspective?
 &lt;ul&gt;
-&lt;li&gt;Validate that our application’s response times are within the required threshold&lt;/li&gt;
+&lt;li&gt;Validate that the application’s response times are within the required threshold&lt;/li&gt;
 
-&lt;li&gt;Validate that our application’s response times are similar across our target locations&lt;/li&gt;
+&lt;li&gt;Validate that the application’s response times are similar across our target (audience) locations&lt;/li&gt;
 
-&lt;li&gt;Validate that our application’s response times are similar when accessed from different network types&lt;/li&gt;
+&lt;li&gt;Validate that the application’s response times are similar when accessed from different network types&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
