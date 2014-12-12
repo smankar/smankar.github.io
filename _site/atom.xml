@@ -4,7 +4,7 @@
  <title>Sandeep Mankar's Blog</title>
  <link href="http://smankar.github.io/" rel="self"/>
  <link href="http://smankar.github.io"/>
- <updated>2014-12-12T18:17:38+05:30</updated>
+ <updated>2014-12-13T01:07:19+05:30</updated>
  <id>http://smankar.github.io</id>
  <author>
    <name>Sandeep Mankar</name>
@@ -25,14 +25,14 @@
 &lt;p&gt;”.. we’ve learned that 80% of the time users wait for a web page to load is the responsibility of the frontend.”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Fast Forward to 2014 and the world has been moving towards even more distributed applications. Networks are being re-written and there is already a huge momentum behind Internet of Things (IOT). Our Application’s performance matters and it will do more so in the coming years. But If “Load Tests” are the only performance tests for our application, then you have a slim chance of identifying performance issues upfront. Server-side performance is important but equally so is the performance of our client-side code, network, infrastructure and even the 3rd party libraries that you use. On this journey to understand application performance, I would like to start with some very basic questions:&lt;/p&gt;
+&lt;p&gt;Fast Forward to 2014 and the world has been moving towards even more distributed applications. Networks are being re-written and there is already a huge momentum behind Internet of Things (IOT). Our Application’s performance matters and it will do more so in the coming years. But If “Load Tests” are the only performance tests for our application, then we have a slim chance of identifying performance issues upfront. Server-side performance is important but equally so is the performance of our client-side code, network, infrastructure and even the 3rd party libraries that you use. On this journey to understand application performance, I would like to start with some very basic questions:&lt;/p&gt;
 
 &lt;h3 id=&quot;1_what_really_is_well_performing_code&quot;&gt;1. What really is well performing code?&lt;/h3&gt;
 
-&lt;p&gt;The answer to this question lead me to the basics of computer science. And I came across some excellent examples in Princeton University’s &lt;a href=&quot;http://introcs.cs.princeton.edu/java/41analysis/&quot;&gt;Analysis of Algorithms&lt;/a&gt;. So, how do we quantify code performance? well, the easiest measure for the performance of a program is its running time. And here’s another quote:&lt;/p&gt;
+&lt;p&gt;The answer to this question lead me to the basics of computer science. And I came across some excellent examples in Princeton University’s &lt;a href=&quot;http://introcs.cs.princeton.edu/java/41analysis/&quot;&gt;Analysis of Algorithms&lt;/a&gt;. How do we quantify code performance? Well, the easiest measure for a program’s performance is its “running time”. And as mentioned in this book:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;The total running time is determined by two primary factors:&lt;/p&gt;
+&lt;p&gt;The total running time for a program is determined by two primary factors:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;The cost of executing each statement. (A property of the system)&lt;/li&gt;
@@ -41,7 +41,7 @@
 &lt;/ol&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;This means that the performance of code depends as much on the underlying system as its algorithmic efficiency. And really, the underlying system is not mere a single computer. These days, it is made up of complex mix of multi-layered software code sitting on top of a variety of hardware systems which are interconnected via different network mediums. And that leads me to the question that has been bugging me for a while..&lt;/p&gt;
+&lt;p&gt;This means that performance of code depends as much on the underlying system as its algorithmic efficiency. And really, the underlying system is not merely a single computer. These days, it is made up of complex mix of multi-layered software code sitting on top of a variety of hardware systems which are interconnected via different network mediums. And that leads me to the question that has been bugging me for a while..&lt;/p&gt;
 
 &lt;h3 id=&quot;2_whose_performance_are_we_are_trying_to_test&quot;&gt;2. Whose performance are we are trying to test?&lt;/h3&gt;
 
@@ -53,11 +53,11 @@
 
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Server-side code is sub-optimal but working fine.&lt;br /&gt; Going by the above picture, our server-side code has a lot of computing power at its disposal. And hence it should not have survival issues. Typically, a good load testing exercise should point this out. But unless there are major defects, we might just decide to live on with some additional computing power.&lt;/p&gt;
+&lt;p&gt;Server-side code is sub-optimal but functionally working fine.&lt;br /&gt; Going by the above picture, our server-side code has a lot of computing power at its disposal. And hence it should not have survival issues. Typically, a good load testing exercise should point this out. But unless there are major defects, we might just decide to live on with some additional computing power.&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;li&gt;
-&lt;p&gt;Server-side code is super awesome but client-side code sucks.&lt;br /&gt; This is where we should be be shifting the focus of our performance tests. Tools like &lt;a href=&quot;http://yslow.org/&quot;&gt;YSlow&lt;/a&gt; and &lt;a href=&quot;https://developers.google.com/speed/pagespeed/&quot;&gt;PageSpeed&lt;/a&gt; should be able to get us started.&lt;/p&gt;
+&lt;p&gt;Server-side code is super awesome but client-side code sucks.&lt;br /&gt; Client-side code runs on each one of the individual clients (typically with limited computing resources). Hence, this is where we should be be shifting the focus of our performance tests. Tools like &lt;a href=&quot;http://yslow.org/&quot;&gt;YSlow&lt;/a&gt; and &lt;a href=&quot;https://developers.google.com/speed/pagespeed/&quot;&gt;PageSpeed&lt;/a&gt; should be able to get us started.&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;li&gt;
@@ -109,7 +109,7 @@
 &lt;li&gt;Real User Measurements (Questions 7-9)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;As I next step, I plan to dig deeper into each of these aspects and come up with strategies and tooling. Thats for the next post though. But, if you’ve got this far I would love to hear from you. Did I miss anything? Do you have better suggestions? Please do leave your comments…..&lt;/p&gt;</content>
+&lt;p&gt;In my next post, I plan to dig deeper into each of these aspects and come up with strategies and tooling. But, if you’ve got this far I would love to hear from you. Did I miss something? Do you have better suggestions? Please do leave your comments…..&lt;/p&gt;</content>
  </entry>
  
  <entry>

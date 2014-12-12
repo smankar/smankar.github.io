@@ -18,21 +18,21 @@ Back in 2010 Steve Souders wrote about [frontend SPOF](http://www.stevesouders.c
 > ".. we've learned that 80% of the time users wait for a web page to load is the responsibility of the frontend."
 
 Fast Forward to 2014 and the world has been moving towards even more distributed applications. Networks are being re-written and there is already a huge momentum behind Internet of Things (IOT).
-Our Application's performance matters and it will do more so in the coming years. But If "Load Tests" are the only performance tests for our application, then you have a slim chance of identifying performance issues upfront.
+Our Application's performance matters and it will do more so in the coming years. But If "Load Tests" are the only performance tests for our application, then we have a slim chance of identifying performance issues upfront.
 Server-side performance is important but equally so is the performance of our client-side code, network, infrastructure and even the 3rd party libraries that you use.
 On this journey to understand application performance, I would like to start with some very basic questions:
 
 ### 1. What really is well performing code?
 The answer to this question lead me to the basics of computer science. And I came across some excellent examples in Princeton University's [Analysis of Algorithms](http://introcs.cs.princeton.edu/java/41analysis/).
-So, how do we quantify code performance? well, the easiest measure for the performance of a program is its running time. And here's another quote:
+How do we quantify code performance? Well, the easiest measure for a program's performance is its "running time". And as mentioned in this book:
 
-> The total running time is determined by two primary factors:
+> The total running time for a program is determined by two primary factors:
 >
 >    1. The cost of executing each statement. (A property of the system)
 >    2. The frequency of execution of each statement. (A property of the algorithm)
 
-This means that the performance of code depends as much on the underlying system as its algorithmic efficiency.
-And really, the underlying system is not mere a single computer. These days, it is made up of complex mix of multi-layered software code sitting on top of a variety of hardware systems which are interconnected via different network mediums.
+This means that performance of code depends as much on the underlying system as its algorithmic efficiency.
+And really, the underlying system is not merely a single computer. These days, it is made up of complex mix of multi-layered software code sitting on top of a variety of hardware systems which are interconnected via different network mediums.
 And that leads me to the question that has been bugging me for a while..
 
 ### 2. Whose performance are we are trying to test?
@@ -44,12 +44,13 @@ Have a look at a sample web application architecture pictured below. And then it
 ![Image of a Sample Web Application Architecture](/assets/images/performance_10_12_2014.png "Web Application Architecture")
 
 #### Examples:
-1. Server-side code is sub-optimal but working fine.<br>
+1. Server-side code is sub-optimal but functionally working fine.<br>
 Going by the above picture, our server-side code has a lot of computing power at its disposal. And hence it should not have survival issues.
 Typically, a good load testing exercise should point this out. But unless there are major defects, we might just decide to live on with some additional computing power.
 
 2. Server-side code is super awesome but client-side code sucks.<br>
-This is where we should be be shifting the focus of our performance tests. Tools like [YSlow](http://yslow.org/) and [PageSpeed](https://developers.google.com/speed/pagespeed/) should be able to get us started.
+Client-side code runs on each one of the individual clients (typically with limited computing resources).
+Hence, this is where we should be be shifting the focus of our performance tests. Tools like [YSlow](http://yslow.org/) and [PageSpeed](https://developers.google.com/speed/pagespeed/) should be able to get us started.
 
 3. All our code is super awesome. But our servers are in a different country than our target audience.<br>
 I feel the real question here is: How early can can we detect such issues? A simple [web page test](http://www.webpagetest.org/) should point this out.
@@ -83,6 +84,6 @@ Essentially, I would classify these into 3 different categories:
   - Real User Measurements (Questions 7-9)
 
 
-As I next step, I plan to dig deeper into each of these aspects and come up with strategies and tooling. Thats for the next post though.
-But, if you've got this far I would love to hear from you. Did I miss anything? Do you have better suggestions?
+In my next post, I plan to dig deeper into each of these aspects and come up with strategies and tooling.
+But, if you've got this far I would love to hear from you. Did I miss something? Do you have better suggestions?
 Please do leave your comments.....
