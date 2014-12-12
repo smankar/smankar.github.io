@@ -5,14 +5,14 @@
         <description>Sandeep Mankar's Blog - Sandeep Mankar</description>
         <link>http://smankar.github.io</link>
         <link>http://smankar.github.io</link>
-        <lastBuildDate>2014-12-12T14:34:27+05:30</lastBuildDate>
-        <pubDate>2014-12-12T14:34:27+05:30</pubDate>
+        <lastBuildDate>2014-12-12T18:09:39+05:30</lastBuildDate>
+        <pubDate>2014-12-12T18:09:39+05:30</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>Whose Performance is it anyway?</title>
-                <description>&lt;p&gt;Last month we finished an awesome &lt;a href=&quot;http://www.thoughtworks.com/insights/blog/vodqa-shots-pune-roundup&quot;&gt;vodQA event&lt;/a&gt; in our Thoughtworks Pune office. During the event it was encouraging to see a lot of interest in Performance Testing. But I was also a bit disappointed to see all of the performance testing discussions tending towards “Load Testing”.&lt;/p&gt;
+                <description>&lt;p&gt;Last month, we finished an awesome &lt;a href=&quot;http://www.thoughtworks.com/insights/blog/vodqa-shots-pune-roundup&quot;&gt;vodQA event&lt;/a&gt; in our Thoughtworks Pune office. During the event it was encouraging to see a lot of interest in Performance Testing. But slightly disappointing to see all of those discussions tending towards “Load Testing”.&lt;/p&gt;
 
 &lt;p&gt;“Load Testing” typically gives us insight into server-side performance. But there is a lot more to performance testing than just measuring server-side performance. Back in 2010 Steve Souders wrote about &lt;a href=&quot;http://www.stevesouders.com/blog/2010/06/01/frontend-spof/&quot;&gt;frontend SPOF&lt;/a&gt;. He makes an important observation:&lt;/p&gt;
 
@@ -24,7 +24,7 @@
 
 &lt;h3 id=&quot;1_what_really_is_well_performing_code&quot;&gt;1. What really is well performing code?&lt;/h3&gt;
 
-&lt;p&gt;The answer to this question lead me to the basics of computer science. And I came across some excellent examples in Princeton University’s &lt;a href=&quot;http://introcs.cs.princeton.edu/java/41analysis/&quot;&gt;Analysis of Algorithms&lt;/a&gt;. How do we quantify code performance? well, the easiest measure for the performance of a program is its running time. And let me quote once again:&lt;/p&gt;
+&lt;p&gt;The answer to this question lead me to the basics of computer science. And I came across some excellent examples in Princeton University’s &lt;a href=&quot;http://introcs.cs.princeton.edu/java/41analysis/&quot;&gt;Analysis of Algorithms&lt;/a&gt;. So, how do we quantify code performance? well, the easiest measure for the performance of a program is its running time. And here’s another quote:&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;The total running time is determined by two primary factors:&lt;/p&gt;
@@ -40,7 +40,7 @@
 
 &lt;h3 id=&quot;2_whose_performance_are_we_are_trying_to_test&quot;&gt;2. Whose performance are we are trying to test?&lt;/h3&gt;
 
-&lt;p&gt;I feel this is an important question to soak-in before we begin with any performance testing exercise. With the complex and multi-layered systems that we work with today, there are different things that could hurt an applications performance. Time for some examples. Have a look at a sample web application architecture pictured below:&lt;/p&gt;
+&lt;p&gt;I feel this is an important question to soak-in before we begin with any performance testing exercise. With the complex and multi-layered systems that we work with today, there are different things that could hurt an applications performance. Have a look at a sample web application architecture pictured below. And then its time for some examples&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/performance_10_12_2014.png&quot; alt=&quot;Image of a Sample Web Application Architecture&quot; title=&quot;Web Application Architecture&quot; /&gt;&lt;/p&gt;
 
@@ -104,7 +104,7 @@
 &lt;li&gt;Real User Measurements (Questions 7-9)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The next step here is to come up with an effective performance test strategy based on these categories. I plan to write about it in my next blog post. But, if you’ve got this far I would love to hear from you. Did I miss anything? Do you have better suggestions? Please do leave your comments…..&lt;/p&gt;</description>
+&lt;p&gt;As I next step, I plan to dig deeper into each of these aspects and come up with strategies and tooling. Thats for the next post though. But, if you’ve got this far I would love to hear from you. Did I miss anything? Do you have better suggestions? Please do leave your comments…..&lt;/p&gt;</description>
                 <link>http://smankar.github.io/2014/12/10/whose-performance-is-it-anyway</link>
                 <guid>http://smankar.github.io/2014/12/10/whose-performance-is-it-anyway</guid>
                 <pubDate>2014-12-10T00:00:00+05:30</pubDate>

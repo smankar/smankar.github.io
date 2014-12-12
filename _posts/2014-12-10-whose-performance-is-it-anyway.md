@@ -9,9 +9,8 @@ tags: [Performance Testing]
 {% include JB/setup %}
 
 
-Last month we finished an awesome [vodQA event](http://www.thoughtworks.com/insights/blog/vodqa-shots-pune-roundup) in our Thoughtworks Pune office.
-During the event it was encouraging to see a lot of interest in Performance Testing.
-But I was also a bit disappointed to see all of the performance testing discussions tending towards "Load Testing".
+Last month, we finished an awesome [vodQA event](http://www.thoughtworks.com/insights/blog/vodqa-shots-pune-roundup) in our Thoughtworks Pune office.
+During the event it was encouraging to see a lot of interest in Performance Testing. But slightly disappointing to see all of those discussions tending towards "Load Testing".
 
 "Load Testing" typically gives us insight into server-side performance. But there is a lot more to performance testing than just measuring server-side performance.
 Back in 2010 Steve Souders wrote about [frontend SPOF](http://www.stevesouders.com/blog/2010/06/01/frontend-spof/). He makes an important observation:
@@ -25,7 +24,7 @@ On this journey to understand application performance, I would like to start wit
 
 ### 1. What really is well performing code?
 The answer to this question lead me to the basics of computer science. And I came across some excellent examples in Princeton University's [Analysis of Algorithms](http://introcs.cs.princeton.edu/java/41analysis/).
-How do we quantify code performance? well, the easiest measure for the performance of a program is its running time. And let me quote once again:
+So, how do we quantify code performance? well, the easiest measure for the performance of a program is its running time. And here's another quote:
 
 > The total running time is determined by two primary factors:
 >
@@ -40,7 +39,7 @@ And that leads me to the question that has been bugging me for a while..
 
 I feel this is an important question to soak-in before we begin with any performance testing exercise.
 With the complex and multi-layered systems that we work with today, there are different things that could hurt an applications performance.
-Time for some examples. Have a look at a sample web application architecture pictured below:
+Have a look at a sample web application architecture pictured below. And then its time for some examples...
 
 ![Image of a Sample Web Application Architecture](/assets/images/performance_10_12_2014.png "Web Application Architecture")
 
@@ -83,8 +82,7 @@ Essentially, I would classify these into 3 different categories:
   - Higher Level tests that are more from the system perspective (Questions 4-6)
   - Real User Measurements (Questions 7-9)
 
-The next step here is to come up with an effective performance test strategy based on these categories. I plan to write about it in my next blog post.
+
+As I next step, I plan to dig deeper into each of these aspects and come up with strategies and tooling. Thats for the next post though.
 But, if you've got this far I would love to hear from you. Did I miss anything? Do you have better suggestions?
 Please do leave your comments.....
-
-
