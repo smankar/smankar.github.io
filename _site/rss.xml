@@ -5,8 +5,8 @@
         <description>Sandeep Mankar's Blog - Sandeep Mankar</description>
         <link>http://smankar.github.io</link>
         <link>http://smankar.github.io</link>
-        <lastBuildDate>2014-12-11T21:53:46+05:30</lastBuildDate>
-        <pubDate>2014-12-11T21:53:46+05:30</pubDate>
+        <lastBuildDate>2014-12-12T14:32:17+05:30</lastBuildDate>
+        <pubDate>2014-12-12T14:32:17+05:30</pubDate>
         <ttl>1800</ttl>
 
 
@@ -40,7 +40,31 @@
 
 &lt;h3 id=&quot;2_whose_performance_are_we_are_trying_to_test&quot;&gt;2. Whose performance are we are trying to test?&lt;/h3&gt;
 
-&lt;p&gt;I feel this is an important question to soak-in before we begin with any performance testing exercise. With the complex and multi-layered systems that we work with today, there are different things that could hurt an applications performance. It is really important that we look at all aspects of application performance before we try to measure it. And again a good way to get started is to ask some simple questions:&lt;/p&gt;
+&lt;p&gt;I feel this is an important question to soak-in before we begin with any performance testing exercise. With the complex and multi-layered systems that we work with today, there are different things that could hurt an applications performance. Time for some examples. Have a look at a sample web application architecture pictured below:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/performance_10_12_2014.png&quot; alt=&quot;Image of a Sample Web Application Architecture&quot; title=&quot;Web Application Architecture&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;examples&quot;&gt;Examples:&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Server-side code is sub-optimal but working fine.&lt;br /&gt; Going by the above picture, your server-side code has a lot of computing power at its disposal. And hence it should not have survival issues. Typically, a good load testing exercise should point this out. But unless there are major defects, you might just live on with additional computing power.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Server-side code is super awesome but client-side code sucks.&lt;br /&gt; This is where you should be be shifting the focus of your performance tests. Tools like &lt;a href=&quot;http://yslow.org/&quot;&gt;YSlow&lt;/a&gt; and &lt;a href=&quot;https://developers.google.com/speed/pagespeed/&quot;&gt;PageSpeed&lt;/a&gt; should be able to get you kick-started.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;All of your code is super awesome. But your servers are in a different country than your target audience.&lt;br /&gt; How early can can you detect such issues? A simple &lt;a href=&quot;http://www.webpagetest.org/&quot;&gt;web page test&lt;/a&gt; should point this out. But ideally you would create continuous probes from across the target locations to keep your web-application well performing.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;All of your code is super awesome. But your audience only uses wireless networks to access your web-application.&lt;br /&gt; Is your website optimised for wireless access? With the mobile revolution around us, this is is another important aspect of your web-application performance. Tools like &lt;a href=&quot;http://mobitest.akamai.com/m/index.cgi&quot;&gt;Mobitest&lt;/a&gt; are relatively new on the block. But surely worth a try.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To Summarize: it is really important that we look at all aspects of application performance before we try to measure it. And again a good way to get started is to ask some simple questions:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Are we trying to test the performance of the piece of code that we just wrote?&lt;/li&gt;
@@ -57,15 +81,15 @@
 
 &lt;li&gt;Are we trying to monitor the performance of our live application?&lt;/li&gt;
 
-&lt;li&gt;Are we checking for bottlenecks in your Application Infrastructure&lt;/li&gt;
+&lt;li&gt;Are we checking for bottlenecks in your Application Infrastructure?&lt;/li&gt;
 
 &lt;li&gt;Do we want to check for performance problems from an End User Perspective?
 &lt;ul&gt;
-&lt;li&gt;Validate that our applications response times are within the required threshold&lt;/li&gt;
+&lt;li&gt;Validate that our application’s response times are within the required threshold&lt;/li&gt;
 
-&lt;li&gt;Validate that our applications response times are similar across our target locations&lt;/li&gt;
+&lt;li&gt;Validate that our application’s response times are similar across our target locations&lt;/li&gt;
 
-&lt;li&gt;Validate that our applications response times are similar when accessed from different network types&lt;/li&gt;
+&lt;li&gt;Validate that our application’s response times are similar when accessed from different network types&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;

@@ -147,7 +147,31 @@
 
 <h3 id='2_whose_performance_are_we_are_trying_to_test'>2. Whose performance are we are trying to test?</h3>
 
-<p>I feel this is an important question to soak-in before we begin with any performance testing exercise. With the complex and multi-layered systems that we work with today, there are different things that could hurt an applications performance. It is really important that we look at all aspects of application performance before we try to measure it. And again a good way to get started is to ask some simple questions:</p>
+<p>I feel this is an important question to soak-in before we begin with any performance testing exercise. With the complex and multi-layered systems that we work with today, there are different things that could hurt an applications performance. Time for some examples. Have a look at a sample web application architecture pictured below:</p>
+
+<p><img alt='Image of a Sample Web Application Architecture' src='/assets/images/performance_10_12_2014.png' title='Web Application Architecture' /></p>
+
+<h4 id='examples'>Examples:</h4>
+
+<ol>
+<li>
+<p>Server-side code is sub-optimal but working fine.<br /> Going by the above picture, your server-side code has a lot of computing power at its disposal. And hence it should not have survival issues. Typically, a good load testing exercise should point this out. But unless there are major defects, you might just live on with additional computing power.</p>
+</li>
+
+<li>
+<p>Server-side code is super awesome but client-side code sucks.<br /> This is where you should be be shifting the focus of your performance tests. Tools like <a href='http://yslow.org/'>YSlow</a> and <a href='https://developers.google.com/speed/pagespeed/'>PageSpeed</a> should be able to get you kick-started.</p>
+</li>
+
+<li>
+<p>All of your code is super awesome. But your servers are in a different country than your target audience.<br /> How early can can you detect such issues? A simple <a href='http://www.webpagetest.org/'>web page test</a> should point this out. But ideally you would create continuous probes from across the target locations to keep your web-application well performing.</p>
+</li>
+
+<li>
+<p>All of your code is super awesome. But your audience only uses wireless networks to access your web-application.<br /> Is your website optimised for wireless access? With the mobile revolution around us, this is is another important aspect of your web-application performance. Tools like <a href='http://mobitest.akamai.com/m/index.cgi'>Mobitest</a> are relatively new on the block. But surely worth a try.</p>
+</li>
+</ol>
+
+<p>To Summarize: it is really important that we look at all aspects of application performance before we try to measure it. And again a good way to get started is to ask some simple questions:</p>
 
 <ol>
 <li>Are we trying to test the performance of the piece of code that we just wrote?</li>
@@ -164,15 +188,15 @@
 
 <li>Are we trying to monitor the performance of our live application?</li>
 
-<li>Are we checking for bottlenecks in your Application Infrastructure</li>
+<li>Are we checking for bottlenecks in your Application Infrastructure?</li>
 
 <li>Do we want to check for performance problems from an End User Perspective?
 <ul>
-<li>Validate that our applications response times are within the required threshold</li>
+<li>Validate that our application’s response times are within the required threshold</li>
 
-<li>Validate that our applications response times are similar across our target locations</li>
+<li>Validate that our application’s response times are similar across our target locations</li>
 
-<li>Validate that our applications response times are similar when accessed from different network types</li>
+<li>Validate that our application’s response times are similar when accessed from different network types</li>
 </ul>
 </li>
 </ol>

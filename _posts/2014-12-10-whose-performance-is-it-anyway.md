@@ -37,9 +37,30 @@ And really, the underlying system is not mere a single computer. These days, it 
 And that leads me to the question that has been bugging me for a while..
 
 ### 2. Whose performance are we are trying to test?
+
 I feel this is an important question to soak-in before we begin with any performance testing exercise.
 With the complex and multi-layered systems that we work with today, there are different things that could hurt an applications performance.
-It is really important that we look at all aspects of application performance before we try to measure it. And again a good way to get started is to ask some simple questions:
+Time for some examples. Have a look at a sample web application architecture pictured below:
+
+![Image of a Sample Web Application Architecture](/assets/images/performance_10_12_2014.png "Web Application Architecture")
+
+#### Examples:
+1. Server-side code is sub-optimal but working fine.<br>
+Going by the above picture, your server-side code has a lot of computing power at its disposal. And hence it should not have survival issues.
+Typically, a good load testing exercise should point this out. But unless there are major defects, you might just live on with additional computing power.
+
+2. Server-side code is super awesome but client-side code sucks.<br>
+This is where you should be be shifting the focus of your performance tests. Tools like [YSlow](http://yslow.org/) and [PageSpeed](https://developers.google.com/speed/pagespeed/) should be able to get you kick-started.
+
+3. All of your code is super awesome. But your servers are in a different country than your target audience.<br>
+How early can can you detect such issues? A simple [web page test](http://www.webpagetest.org/) should point this out.
+But ideally you would create continuous probes from across the target locations to keep your web-application well performing.
+
+4. All of your code is super awesome. But your audience only uses wireless networks to access your web-application.<br>
+Is your website optimised for wireless access? With the mobile revolution around us, this is is another important aspect of your web-application performance.
+Tools like [Mobitest](http://mobitest.akamai.com/m/index.cgi) are relatively new on the block. But surely worth a try.
+
+To Summarize: it is really important that we look at all aspects of application performance before we try to measure it. And again a good way to get started is to ask some simple questions:
 
 1. Are we trying to test the performance of the piece of code that we just wrote?
 2. Do we want to test the code performance when it is deployed in an application or web server?
@@ -48,11 +69,11 @@ It is really important that we look at all aspects of application performance be
 5. Do we want to come up with some performance figures for Capacity planning?
 6. How much peak load would our application handle? How does it scale?
 7. Are we trying to monitor the performance of our live application?
-8. Are we checking for bottlenecks in your Application Infrastructure
+8. Are we checking for bottlenecks in your Application Infrastructure?
 9. Do we want to check for performance problems from an End User Perspective?
-    - Validate that our applications response times are within the required threshold
-    - Validate that our applications response times are similar across our target locations
-    - Validate that our applications response times are similar when accessed from different network types
+    - Validate that our application's response times are within the required threshold
+    - Validate that our application's response times are similar across our target locations
+    - Validate that our application's response times are similar when accessed from different network types
 
 These are all important questions that try to address different aspects of application performance.
 They should help us design specific testing experiments and in-turn help uncovering performance problems.
